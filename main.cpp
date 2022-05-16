@@ -5,8 +5,8 @@
 #include "user.h"
 
 int main(){
-string Name,FirstName,LastName, Email, Password, 
-		About,CompanyName,Dob,Country,Description,Filepath,Comment;
+	string Name,FirstName,LastName, Email, Password, 
+	About,CompanyName,Dob,Country,Description,Filepath,Comment;
 int ID;
 
 	//Creating Dynamic Developer Objects
