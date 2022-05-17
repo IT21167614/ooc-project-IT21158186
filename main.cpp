@@ -5,6 +5,7 @@
 #include "user.h"
 #include "category.h"
 #include "review.h"
+#include "admin.h"
 
 int main(){
 	string Name,FirstName,LastName, Email, Password, 
@@ -35,6 +36,12 @@ int ID;
 	review* rev1, * rev2;
 	rev1 = new review(Comment);
 	rev2 = new review(Comment);
+	
+	//Creating Dynamic Admin Objects With Overloaded Constructor
+	admin* ad1, * ad2;
+	ad1 = new admin(ID, Name, Email, Password);
+	ad2 = new admin(ID, Name, Email, Password);
+	
 
   	//Initializing Developers
 	dev1->set_developer(ID,CompanyName,Email,Password,About);
@@ -54,4 +61,5 @@ int ID;
 	delete app1, app2;
 	delete cat1, cat2;
 	delete rev1, rev2;
+	delete ad1, ad2;
 }
